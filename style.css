@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+}
+
+/* Main Content */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: url("images/backdrop-min.jpg") no-repeat#24a0a7;
+  background-size: cover;
+}
+
+.bodyWrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  max-width: 960px;
+  text-align: center;
+  margin: 40px auto 20px auto;
+}
+
+.header h1, .header h2, .header h3 {
+  width: 100%;
+}
+.header h1 {
+  font-size: 5em;
+  color: #eede78;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.intro p {
+  margin: 50px 0;
+  padding: 20px 30px;
+  background: #08c29d;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 20px 0 20px 0px;
+  transform: rotate(-3deg);
+  box-shadow:15px 10px 20px rgb(22, 22, 22);
+}
+
+
+#gameBoard {
+  margin: 0 auto;
+  width: 480px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background: #249197;
+  border: solid 10px #ee7878;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 10px #eede78, 1px 1px 1px 15px #e4d724;
+}
+
+.square {
+  border:solid 1px #1e797e;
+  align-items: center;
+  justify-content: center;
+  font-size: 6em;
+  height: 100%;
+  width: 100%;
+  caret-color: rgba(0,0,0,0);
+  transition: opacity 1s;
+}
+
+.O {
+  background: url("images/rick.png") no-repeat #eede78;
+  background-position: bottom;
+
+}
+
+.X {
+  background: url("images/morty.png") no-repeat #08c29d;
+  background-position: bottom;
+  bottom: 0;
+
+}
+
+.intro button {
+  position: absolute;
+  padding: 20px 70px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  background: rgb(238,120,120);
+  border-radius: 20px 0 20px 0px;
+  transform: rotate(5deg);
+  margin: -60px 0 0 -150px;
+  box-shadow:-15px 10px 20px rgb(22, 22, 22);
+}
+
+.intro button:hover {
+  background: rgb(218, 104, 104);
+}
+
+/* Footer Styling */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px 40px;
+  background: #2a3030;
+  align-items: center;
+  text-align: right;
+}
+
+.footer p {
+  width: 100%;
+  font-size: .9em;
+  color: #ececec;
+}
+
+.footer p a {
+  font-weight: bold;
+  color: #FFF; 
+}
+
+.gitHub {
+  background: rgb(30, 32, 32);
+  border: solid 2px rgb(30, 32, 32);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.gitHub:hover {
+  background: rgb(22, 22, 22);
+  border:solid 2px #000;
+  transition: .5s;
+}
